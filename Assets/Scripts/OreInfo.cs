@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OreInfo : MonoBehaviour
 {
-    public int oreDrop = 15;
+    public int oreDrop = 5;
     // Start is called before the first frame update
     void Start()
     {

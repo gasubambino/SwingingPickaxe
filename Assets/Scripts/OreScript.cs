@@ -9,8 +9,12 @@ public class OreScript : MonoBehaviour
     [SerializeField] Transform lights;
     public OreInfo oreInfo;
 
+    public ParticleSystem destroyParticleSystem;
+    public ParticleSystem hitParticleSystem;
+
+
     int oreDrop;
-    int oreHp = 1;
+    int oreHp = 5;
     float respawnTime = 5;
     //gold drop
     public GameObject prefab;
@@ -26,8 +30,15 @@ public class OreScript : MonoBehaviour
     {
         sprite = GetComponent<SpriteRenderer>();
         collider = GetComponent<Collider2D>();
-        lights = gameObject.transform.GetChild(0);
+        lights = gameObject.transform.GetChild(2);
         oreDrop = oreInfo.oreDrop;
+
+        Transform destroyP = transform.GetChild(0);
+        Transform hitP = transform.GetChild(1);
+
+
+        destroyParticleSystem = destroyP.GetComponent<ParticleSystem>();
+        hitParticleSystem = hitP.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -42,12 +53,14 @@ public class OreScript : MonoBehaviour
 
     public void OreHit()
     {
+        hitParticleSystem.Play();
         StartFlashCoroutine();
         oreHp--;
     }
 
     void OreDestroy()
     {
+        destroyParticleSystem.Play();
         sprite.enabled = false;
         collider.enabled = false;
         lights.gameObject.SetActive(false);

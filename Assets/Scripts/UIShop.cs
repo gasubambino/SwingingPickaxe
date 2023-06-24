@@ -41,7 +41,8 @@ public class UIShop : MonoBehaviour
         if (playerTrigger.goldCount >= item1.price)
         {
             playerTrigger.goldCount-= item1.price;
-            oreInfo.oreDrop += 15;
+            oreInfo.oreDrop += 4;
+            item1.price += 20;
         }
         else
         {
