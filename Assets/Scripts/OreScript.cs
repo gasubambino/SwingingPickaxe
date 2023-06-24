@@ -9,8 +9,8 @@ public class OreScript : MonoBehaviour
     [SerializeField] Transform lights;
     public OreInfo oreInfo;
 
-    public ParticleSystem destroyParticleSystem;
-    public ParticleSystem hitParticleSystem;
+    private ParticleSystem destroyParticleSystem;
+    private ParticleSystem hitParticleSystem;
 
 
     int oreDrop;

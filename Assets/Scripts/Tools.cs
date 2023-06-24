@@ -27,7 +27,6 @@ public class Tools : MonoBehaviour
     {
         if (goingDown)
         {
-            print("HIT");
             if (collision.gameObject.CompareTag("ore"))
             {               
                 collision.gameObject.GetComponent<OreScript>().OreHit();
@@ -42,7 +41,6 @@ public class Tools : MonoBehaviour
                 collision.gameObject.GetComponent<SlimeWalk>().TakeDamage();
                 collision.gameObject.GetComponent<SlimeWalk>().knockBack = true;
                 collision.gameObject.GetComponent<SlimeWalk>().StartKnockBackTimer();
-                print("MERDAAAA");
                 collision.gameObject.GetComponent<SlimeWalk>().KnockBack(direction, forceMagnitude);
             }
         }

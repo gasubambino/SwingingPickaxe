@@ -14,6 +14,6 @@ public class OreInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(oreDrop);
+        //print(oreDrop);
     }
 }
