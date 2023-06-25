@@ -7,7 +7,6 @@ public class UIShop : MonoBehaviour
 {
     public PlayerTrigger playerTrigger;
     public Item1 item1;
-    public OreInfo oreInfo;
     private Transform container;
     private Transform shopItemTemplate;
 
@@ -38,10 +37,10 @@ public class UIShop : MonoBehaviour
     }
     private void TryBuyItem()
     {
-        if (playerTrigger.goldCount >= item1.price)
+        if (GameManager.Instance.playerGoldCount >= item1.price)
         {
-            playerTrigger.goldCount-= item1.price;
-            oreInfo.oreDrop += 4;
+            GameManager.Instance.playerGoldCount -= item1.price;
+            //oreInfo.oreDrop += 4;
             item1.price += 20;
         }
         else
