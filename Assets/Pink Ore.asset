@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f955a755f76b2224db75d823db0f3141, type: 3}
+  m_Name: Pink Ore
+  m_EditorClassIdentifier: 
+  oreName: Pink
+  oreDropAmount: 3
+  oreHp: 8
+  oreSprite: {fileID: 21300000, guid: bdcb2ecd21adda74bb2f22bc8c8b4d9e, type: 3}
+  oreDrop: {fileID: 2939483680976131331, guid: 0c5006db9cf34b14bb6f5310adec9955, type: 3}

@@ -5,19 +5,19 @@ using UnityEngine;
 public class OreScript : MonoBehaviour
 {
     SpriteRenderer sprite;
-    Collider2D collider;
+    new Collider2D collider;
     [SerializeField] Transform lights;
-    public OreInfo oreInfo;
 
     private ParticleSystem destroyParticleSystem;
     private ParticleSystem hitParticleSystem;
+    public Ore ore;
 
 
     int oreDrop;
-    int oreHp = 5;
+    int oreHp;
     float respawnTime = 5;
     //gold drop
-    public GameObject prefab;
+    GameObject prefab;
     public float radius;
 
     //flash when hit, variables
@@ -28,10 +28,13 @@ public class OreScript : MonoBehaviour
 
     void Start()
     {
+        oreDrop = ore.oreDropAmount;
+        oreHp = ore.oreHp;
+        prefab = ore.oreDrop;
         sprite = GetComponent<SpriteRenderer>();
+        sprite.sprite = ore.oreSprite;
         collider = GetComponent<Collider2D>();
         lights = gameObject.transform.GetChild(2);
-        oreDrop = oreInfo.oreDrop;
 
         Transform destroyP = transform.GetChild(0);
         Transform hitP = transform.GetChild(1);
@@ -44,7 +47,6 @@ public class OreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        oreDrop = oreInfo.oreDrop;
         if (oreHp <= 0)
         {
             OreDestroy();
@@ -64,7 +66,7 @@ public class OreScript : MonoBehaviour
         sprite.enabled = false;
         collider.enabled = false;
         lights.gameObject.SetActive(false);
-        oreHp = 1;
+        oreHp = ore.oreHp;
         int spawnCount = Random.Range(oreDrop, oreDrop+oreDrop*30/100);
         for (int i = 0; i < spawnCount; i++)
         {

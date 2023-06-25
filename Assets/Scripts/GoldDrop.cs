@@ -9,7 +9,6 @@ public class GoldDrop : MonoBehaviour
 
     public float impulseForce = 5f;
     public float lateralForce = 2f;
-    float timer = 0f;
 
     private Rigidbody2D rb;
 
