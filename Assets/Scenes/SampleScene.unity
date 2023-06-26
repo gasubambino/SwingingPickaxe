@@ -875,6 +875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 218170071}
   - component: {fileID: 218170072}
+  - component: {fileID: 218170073}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -911,6 +912,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerGoldCount: 0
   playerPinkCount: 0
+--- !u!114 &218170073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218170069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f977a0f12b1887442859e75a5029aa6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &239471179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,8 +2099,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 6.94835, y: -9.6604, z: 0}
-    m_Extent: {x: 7.9509497, y: 10.4118, z: 0}
+    m_Center: {x: 6.94935, y: -9.655049, z: 0}
+    m_Extent: {x: 7.94725, y: 10.40335, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3341,7 +3354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5a03eae09243549b2265e4565bbb58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oreIndex: 1
+  oreDropName: pink
 --- !u!114 &1596554466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4083,7 +4096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5a03eae09243549b2265e4565bbb58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oreIndex: 0
+  oreDropName: gold
 --- !u!114 &1961938478
 MonoBehaviour:
   m_ObjectHideFlags: 0

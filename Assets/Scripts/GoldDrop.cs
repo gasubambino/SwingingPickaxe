@@ -43,7 +43,7 @@ public class GoldDrop : MonoBehaviour
         // Aplica o impulso ao Rigidbody2D
         rb.AddForce(impulse, ForceMode2D.Impulse);
 
-        //StartCoroutine(Timer());
+        StartCoroutine(Timer());
     }
 
     // Update is called once per frame

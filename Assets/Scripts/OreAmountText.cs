@@ -6,23 +6,25 @@ public class OreAmountText : MonoBehaviour
 {
     private TextMeshProUGUI text;
 
-    [SerializeField] int oreIndex;
-    private string[] oreType = new string[2];
-
-    
+    [SerializeField] string oreDropName;
+    string oreString;
 
     void Start()
-    {
-        
+    {  
         text = GetComponent<TextMeshProUGUI>();
     }
 
     void Update()
     {
-        oreType[0] = GameManager.Instance.playerGoldCount.ToString();
-        oreType[1] = GameManager.Instance.playerPinkCount.ToString();
-        print(oreType[0]);
-        print(oreType[1]);
-        text.text = oreType[oreIndex];
+        switch (oreDropName)
+        {
+            case "gold":
+                oreString = GameManager.Instance.playerGoldCount.ToString();
+                break;
+            case "pink":
+                oreString = GameManager.Instance.playerPinkCount.ToString();
+                break;
+        }
+        text.text = oreString;
     }
 }
