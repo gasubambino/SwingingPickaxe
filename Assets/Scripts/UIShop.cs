@@ -37,6 +37,7 @@ public class UIShop : MonoBehaviour
     }
     private void TryBuyItem()
     {
+        /*
         if (GameManager.Instance.playerGoldCount >= item1.price)
         {
             GameManager.Instance.playerGoldCount -= item1.price;
@@ -47,5 +48,6 @@ public class UIShop : MonoBehaviour
         {
 
         }
+        */
     }
 }

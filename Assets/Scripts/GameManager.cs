@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public int playerGoldCount;
-    public int playerPinkCount;
+    //public int playerGoldCount;
+    //public int playerPinkCount;
 
     private void Awake()
     {

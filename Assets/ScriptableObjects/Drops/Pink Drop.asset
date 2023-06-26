@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b7ee54b26ff794ca78c8de64f3451f, type: 3}
+  m_Name: Pink Drop
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8657906266661723471, guid: f903763ec6c4b63469b3b4ebb6145602, type: 3}
+  hotbarSprite: {fileID: 687378298, guid: 0c6a916cd91d94642b07911b625b8a74, type: 3}
+  sprites:
+  - {fileID: 1803789514, guid: 0c6a916cd91d94642b07911b625b8a74, type: 3}
+  - {fileID: 1142708026, guid: 0c6a916cd91d94642b07911b625b8a74, type: 3}
+  - {fileID: -1286898166, guid: 0c6a916cd91d94642b07911b625b8a74, type: 3}
+  - {fileID: 687378298, guid: 0c6a916cd91d94642b07911b625b8a74, type: 3}
+  - {fileID: 1142447050, guid: 0c6a916cd91d94642b07911b625b8a74, type: 3}

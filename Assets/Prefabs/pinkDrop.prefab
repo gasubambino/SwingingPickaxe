@@ -9,13 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6724213903868794094}
-  - component: {fileID: -8489645343406723299}
   - component: {fileID: 3768455198768567763}
   - component: {fileID: -666809675541098263}
   - component: {fileID: -369565611186255831}
   m_Layer: 6
   m_Name: pinkDrop
-  m_TagString: pinkDrop
+  m_TagString: Drops
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,18 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8489645343406723299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2939483680976131331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b93f1b614c972b449c1852b3b83dfad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3768455198768567763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,12 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 937eb6094d004af4d800f517636b3244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 1803789514, guid: 0c6a916cd91d94642b07911b625b8a74, type: 3}
-  - {fileID: 1142708026, guid: 0c6a916cd91d94642b07911b625b8a74, type: 3}
-  - {fileID: -1286898166, guid: 0c6a916cd91d94642b07911b625b8a74, type: 3}
-  - {fileID: 687378298, guid: 0c6a916cd91d94642b07911b625b8a74, type: 3}
-  - {fileID: 1142447050, guid: 0c6a916cd91d94642b07911b625b8a74, type: 3}
+  dropObject: {fileID: 11400000, guid: ab2d249edd27796409b8fc51b8198fbc, type: 2}
   impulseForce: 7
   lateralForce: 4
   initialSpeed: 10.8

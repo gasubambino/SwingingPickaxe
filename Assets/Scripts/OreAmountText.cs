@@ -16,6 +16,7 @@ public class OreAmountText : MonoBehaviour
 
     void Update()
     {
+        /*
         switch (oreDropName)
         {
             case "gold":
@@ -26,5 +27,6 @@ public class OreAmountText : MonoBehaviour
                 break;
         }
         text.text = oreString;
+        */
     }
 }

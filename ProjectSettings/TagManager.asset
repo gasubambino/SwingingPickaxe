@@ -6,8 +6,7 @@ TagManager:
   tags:
   - ore
   - slime
-  - goldDrop
-  - pinkDrop
+  - Drops
   layers:
   - Default
   - TransparentFX

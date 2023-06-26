@@ -3,16 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoldDrop : MonoBehaviour
+public class OreDrop : MonoBehaviour
 {
-    [SerializeField] Sprite[] sprites;
+    public DropObject dropObject;
+
+    Sprite[] sprites;
 
     public float impulseForce = 5f;
     public float lateralForce = 2f;
 
     private Rigidbody2D rb;
 
-    private Transform target;
     public float initialSpeed = 6.0f; // Initial speed
     public float acceleration = 6.0f; // Acceleration rate
 
@@ -22,6 +23,7 @@ public class GoldDrop : MonoBehaviour
 
     void Start()
     {
+        sprites = dropObject.sprites;
         playerPos = GameObject.FindWithTag("Player");
         //RANDOM SPRITE BETWEEN 5
         int randomIndex = Random.Range(0, sprites.Length);
@@ -43,13 +45,12 @@ public class GoldDrop : MonoBehaviour
         // Aplica o impulso ao Rigidbody2D
         rb.AddForce(impulse, ForceMode2D.Impulse);
 
-        StartCoroutine(Timer());
+        //StartCoroutine(Timer());
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-
         if (magnetActive == true)
         {
             targetPos = playerPos.transform.position;
